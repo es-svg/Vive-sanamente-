@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vive Sano</title>
+</head>
+<body>
+
+    <!-- Sección de bienvenida -->
+    <div id="welcome">
+        <button onclick="showContent()">Entrar</button>
+    </div>
+
+    <!-- Menú de opciones -->
+    <div id="menu">
+        <a href="#habitos">¿Qué son los hábitos?</a>
+        <a href="#ejemplos">Ejemplos de buenos y malos hábitos</a>
+        <a href="#alimentacion">¿Qué es la buena alimentación?</a>
+        <a href="#consecuencias">Consecuencias de la mala alimentación</a>
+        <a href="#sedentarismo">¿Qué es el sedentarismo?</a>
+        <a href="#bulimia">¿Qué es la bulimia?</a>
+        <a href="#anorexia">¿Qué es la anorexia?</a>
+        <a href="#creditos">Créditos</a>
+    </div>
+
+    <!-- Sección de divulgación científica (oculta al principio) -->
+    <div id="content" style="display:none;">
+        <h2>Divulgación Científica sobre Alimentación Saludable</h2>
+        <p>La alimentación saludable es clave para mantener una buena salud y prevenir enfermedades...</p>
+        
+        <!-- Secciones que corresponden al menú -->
+        <div id="habitos">
+            <h3>¿Qué son los hábitos?</h3>
+            <p>Los hábitos son conductas que realizamos de forma repetida, casi siempre de manera automática...</p>
+        </div>
+
+        <div id="ejemplos">
+            <h3>Ejemplos de buenos y malos hábitos</h3>
+            <p>Buenos hábitos incluyen comer frutas y verduras, hacer ejercicio regularmente, dormir lo suficiente...</p>
+        </div>
+
+        <div id="alimentacion">
+            <h3>¿Qué es la buena alimentación?</h3>
+            <p>La buena alimentación es aquella que cubre todas las necesidades nutricionales del cuerpo...</p>
+        </div>
+
+        <div id="consecuencias">
+            <h3>Consecuencias de la mala alimentación</h3>
+            <p>Una mala alimentación puede traer consecuencias como obesidad, diabetes, enfermedades del corazón...</p>
+        </div>
+
+        <div id="sedentarismo">
+            <h3>¿Qué es el sedentarismo?</h3>
+            <p>El sedentarismo es un estilo de vida caracterizado por la falta de actividad física...</p>
+        </div>
+
+        <div id="bulimia">
+            <h3>¿Qué es la bulimia?</h3>
+            <p>La bulimia es un trastorno alimentario caracterizado por episodios de ingesta excesiva de alimentos...</p>
+        </div>
+
+        <div id="anorexia">
+            <h3>¿Qué es la anorexia?</h3>
+            <p>La anorexia es un trastorno alimentario que se caracteriza por la restricción extrema de la ingesta de alimentos...</p>
+        </div>
+
+        <div id="creditos">
+            <h3>Créditos</h3>
+            <p>Las fuentes para esta información fueron obtenidas de artículos científicos confiables y fuentes de salud pública...</p>
+        </div>
+    </div>
+
+    <script>
+        function showContent() {
+            document.getElementById('welcome').style.display = 'none';
+            document.getElementById('content').style.display = 'block';
+        }
+    </script>
+
+</body>
+</html>
